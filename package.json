@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "./start.js strapi develop",
+    "start": "./start.js strapi start",
+    "build": "./start.js strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@gtr/config": "^0.0.12",
+    "mime-types": "^2.1.27",
+    "strapi": "3.6.5",
+    "strapi-admin": "3.6.5",
+    "strapi-connector-mongoose": "3.6.5",
+    "strapi-plugin-content-manager": "3.6.5",
+    "strapi-plugin-content-type-builder": "3.6.5",
+    "strapi-plugin-documentation": "3.6.5",
+    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-graphql": "3.6.5",
+    "strapi-plugin-i18n": "3.6.5",
+    "strapi-plugin-upload": "3.6.5",
+    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi-utils": "3.6.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "5d49cbca-45d9-41df-8d2b-0756bcfced8f",
+    "template": "https://github.com/strapi/strapi-template-blog",
+    "starter": "https://github.com/strapi/strapi-starter-nuxt-blog"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}
