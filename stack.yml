@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  relive-cms:
+    image: anityatech/relive-cms:latest
+    restart: unless-stopped
+    networks:
+      public:
+        aliases:
+          - relive-cms.relive-cms
+    secrets:
+      - env_file
+
+networks:
+  public:
+    external:
+      name: gateway-public
+
+secrets:
+  env_file:
+    external: true
+    name: relive-cms-env-file

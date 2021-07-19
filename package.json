@@ -6,12 +6,14 @@
   "scripts": {
     "develop": "./start.js strapi develop",
     "start": "./start.js strapi start",
-    "build": "./start.js strapi build",
-    "strapi": "strapi"
+    "build": "strapi build",
+    "strapi": "strapi",
+    "docker:build": "docker build --no-cache -t anityatech/relive-cms .",
+    "docker:push": "docker push anityatech/relive-cms"
   },
   "devDependencies": {},
   "dependencies": {
-    "@gtr/config": "^0.0.12",
+    "@gtr/config": "^1.0.1",
     "mime-types": "^2.1.27",
     "strapi": "3.6.5",
     "strapi-admin": "3.6.5",

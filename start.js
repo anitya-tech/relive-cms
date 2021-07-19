@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { vaultKvMap } = require("@gtr/config");
+const { getVaultItem } = require("@gtr/config");
 const spawn = require("child_process").spawn;
 
 const env =
@@ -12,8 +12,8 @@ const env =
 const vaultPrefix = `projects/anitya/relive/cms/${env}`;
 
 const start = async () => {
-  const db = await vaultKvMap(`${vaultPrefix}/mongo/rw`);
-  const core = await vaultKvMap(`${vaultPrefix}/core`);
+  const db = await getVaultItem(`${vaultPrefix}/mongo/rw`);
+  const core = await getVaultItem(`${vaultPrefix}/core`);
 
   spawn("npm", ["run", ...process.argv.slice(2)], {
     stdio: "inherit",

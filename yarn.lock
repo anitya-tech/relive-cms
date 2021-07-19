@@ -1270,11 +1270,14 @@
     camel-case "4.1.2"
     tslib "~2.1.0"
 
-"@gtr/config@^0.0.12":
-  version "0.0.12"
-  resolved "https://npm.geektr.co/@gtr%2fconfig/-/config-0.0.12.tgz#228ff665716b0a7d477ba0f710878fca54212237"
-  integrity sha512-N4mMAtXSy1G0wylaMmLlGCLmuUvrxyLZbXzBJNTRa0wjxd4R2iWqxYtsCUzWa7RR0OkzSc8OFYjw4DWRyEYP7A==
+"@gtr/config@^1.0.1":
+  version "1.0.1"
+  resolved "https://npm.geektr.co/@gtr%2fconfig/-/config-1.0.1.tgz#09af091d50303087afd66696e80a13ed76ec8853"
+  integrity sha512-57bYv7Po58dr2bqirVGIQWDDDzovzmugjn5S/UJ52Cgz+sP7QU5lI5+qPa1Uz//1pAK6QnOXZX39ipyjfq+w9A==
   dependencies:
+    axios "^0.21.1"
+    dotenv "^10.0.0"
+    is-docker "^2.2.1"
     lodash.set "^4.3.2"
 
 "@hypnosphi/create-react-context@^0.3.1":
@@ -4128,6 +4131,11 @@ dotenv@8.2.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
+dotenv@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
+
 dottie@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/dottie/-/dottie-2.0.2.tgz#cc91c0726ce3a054ebf11c55fbc92a7f266dd154"
@@ -5842,7 +5850,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
     is-data-descriptor "^1.0.0"
     kind-of "^6.0.2"
 
-is-docker@2.2.1, is-docker@^2.0.0:
+is-docker@2.2.1, is-docker@^2.0.0, is-docker@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/is-docker/-/is-docker-2.2.1.tgz#33eeabe23cfe86f14bde4408a02c0cfb853acdaa"
   integrity sha512-F+i2BKsFrH66iaUFc0woD8sLy8getkwTwtOBjvs56Cx4CgJDeKQeqfz8wAYiSb8JOprWhHH5p77PbmYCvvUuXQ==
