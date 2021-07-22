@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "relive_shows",
+  "info": {
+    "name": "relive show",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "duration": {
+      "type": "biginteger",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "area_id": {
+      "type": "integer"
+    },
+    "remark": {
+      "type": "text"
+    },
+    "video_track": {
+      "type": "component",
+      "repeatable": true,
+      "component": "relive-clip.video"
+    },
+    "danmaku_track": {
+      "type": "component",
+      "repeatable": true,
+      "component": "relive-clip.danmaku"
+    },
+    "marks": {
+      "type": "dynamiczone",
+      "components": [
+        "relive-mark.area",
+        "relive-mark.note",
+        "relive-mark.title"
+      ]
+    }
+  }
+}

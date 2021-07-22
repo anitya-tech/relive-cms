@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_relive_clip_danmakus",
+  "info": {
+    "name": "danmaku",
+    "icon": "file-word",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "duration": {
+      "type": "biginteger",
+      "required": true
+    },
+    "store": {
+      "collection": "storage-file"
+    },
+    "remark": {
+      "type": "text"
+    }
+  }
+}

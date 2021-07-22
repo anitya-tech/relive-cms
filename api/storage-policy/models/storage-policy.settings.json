@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storage_policies",
+  "info": {
+    "name": "storage policy",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "friendly_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "minio",
+        "s3",
+        "aliyun_oss",
+        "tencent_cos",
+        "baidu_wangpan",
+        "webdav"
+      ],
+      "required": true
+    },
+    "config": {
+      "type": "json",
+      "required": true
+    },
+    "remark": {
+      "type": "text"
+    }
+  }
+}

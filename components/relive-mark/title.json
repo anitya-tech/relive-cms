@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_relive_mark_titles",
+  "info": {
+    "name": "title",
+    "icon": "bookmark"
+  },
+  "options": {},
+  "attributes": {
+    "room_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

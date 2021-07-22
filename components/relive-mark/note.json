@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_relive_mark_notes",
+  "info": {
+    "name": "note",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "room_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "note": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "model": "relive-user"
+    }
+  }
+}

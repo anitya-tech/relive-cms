@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storage_files",
+  "info": {
+    "name": "storage file",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "biginteger",
+      "required": true
+    },
+    "hash": {
+      "type": "string"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "storage_policy": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "meta": {
+      "type": "json"
+    }
+  }
+}

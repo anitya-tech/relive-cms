@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/storage-files",
+      "handler": "storage-file.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storage-files/count",
+      "handler": "storage-file.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storage-files/:id",
+      "handler": "storage-file.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/storage-files",
+      "handler": "storage-file.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/storage-files/:id",
+      "handler": "storage-file.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/storage-files/:id",
+      "handler": "storage-file.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

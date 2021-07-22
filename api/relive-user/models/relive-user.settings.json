@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "relive_users",
+  "info": {
+    "name": "relive user"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bilibili_uid": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "nickname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

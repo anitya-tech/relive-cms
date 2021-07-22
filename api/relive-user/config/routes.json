@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/relive-users",
+      "handler": "relive-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/relive-users/count",
+      "handler": "relive-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/relive-users/:id",
+      "handler": "relive-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/relive-users",
+      "handler": "relive-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/relive-users/:id",
+      "handler": "relive-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/relive-users/:id",
+      "handler": "relive-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

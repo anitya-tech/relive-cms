@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/storage-policies",
+      "handler": "storage-policy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storage-policies/count",
+      "handler": "storage-policy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storage-policies/:id",
+      "handler": "storage-policy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/storage-policies",
+      "handler": "storage-policy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/storage-policies/:id",
+      "handler": "storage-policy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/storage-policies/:id",
+      "handler": "storage-policy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

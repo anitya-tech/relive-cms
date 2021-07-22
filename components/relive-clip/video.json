@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_relive_clip_videos",
+  "info": {
+    "name": "video",
+    "icon": "file-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "start_time": {
+      "type": "datetime",
+      "required": true
+    },
+    "duration": {
+      "type": "biginteger",
+      "required": true
+    },
+    "store": {
+      "collection": "storage-file"
+    },
+    "remark": {
+      "type": "text"
+    },
+    "cover": {
+      "collection": "storage-file"
+    },
+    "origin": {
+      "collection": "storage-file"
+    },
+    "audio": {
+      "collection": "storage-file"
+    }
+  }
+}
