@@ -9,7 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi",
     "docker:build": "docker build --no-cache -t anityatech/relive-cms .",
-    "docker:push": "docker push anityatech/relive-cms"
+    "docker:push": "docker push anityatech/relive-cms",
+    "api:publish": "yarn --cwd relive-cms-api build && yarn --cwd relive-cms-api publish --patch --access public"
   },
   "devDependencies": {},
   "dependencies": {
