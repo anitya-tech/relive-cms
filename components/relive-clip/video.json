@@ -12,7 +12,7 @@
       "required": true
     },
     "duration": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "store": {
@@ -21,7 +21,7 @@
     "remark": {
       "type": "text"
     },
-    "cover": {
+    "thumbnail": {
       "collection": "storage-file"
     },
     "origin": {

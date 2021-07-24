@@ -2,12 +2,13 @@
   "collectionName": "components_relive_mark_titles",
   "info": {
     "name": "title",
-    "icon": "bookmark"
+    "icon": "bookmark",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "room_id": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "start_time": {

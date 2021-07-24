@@ -8,7 +8,7 @@
   "options": {},
   "attributes": {
     "room_id": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "start_time": {

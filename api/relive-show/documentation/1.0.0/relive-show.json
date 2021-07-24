@@ -620,7 +620,7 @@
                 "remark": {
                   "type": "string"
                 },
-                "cover": {
+                "thumbnail": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -882,6 +882,9 @@
                         },
                         "nickname": {
                           "type": "string"
+                        },
+                        "room_id": {
+                          "type": "integer"
                         },
                         "created_by": {
                           "type": "string"
@@ -1024,7 +1027,7 @@
                 "remark": {
                   "type": "string"
                 },
-                "cover": {
+                "thumbnail": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -1286,6 +1289,9 @@
                         },
                         "nickname": {
                           "type": "string"
+                        },
+                        "room_id": {
+                          "type": "integer"
                         },
                         "created_by": {
                           "type": "string"

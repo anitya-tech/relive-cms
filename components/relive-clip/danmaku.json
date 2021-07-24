@@ -12,7 +12,7 @@
       "required": true
     },
     "duration": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "store": {

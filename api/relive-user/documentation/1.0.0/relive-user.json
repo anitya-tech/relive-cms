@@ -542,6 +542,9 @@
           },
           "nickname": {
             "type": "string"
+          },
+          "room_id": {
+            "type": "integer"
           }
         }
       },
@@ -556,6 +559,9 @@
           },
           "nickname": {
             "type": "string"
+          },
+          "room_id": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "relive_users",
   "info": {
-    "name": "relive user"
+    "name": "relive user",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "bilibili_uid": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true,
       "unique": true
     },
     "nickname": {
       "type": "string",
       "required": true
+    },
+    "room_id": {
+      "type": "integer"
     }
   }
 }

@@ -532,7 +532,8 @@
           "id",
           "friendly_name",
           "type",
-          "config"
+          "config",
+          "online"
         ],
         "properties": {
           "id": {
@@ -557,6 +558,10 @@
           },
           "remark": {
             "type": "string"
+          },
+          "online": {
+            "type": "boolean",
+            "default": true
           }
         }
       },
@@ -564,7 +569,8 @@
         "required": [
           "friendly_name",
           "type",
-          "config"
+          "config",
+          "online"
         ],
         "properties": {
           "friendly_name": {
@@ -586,6 +592,10 @@
           },
           "remark": {
             "type": "string"
+          },
+          "online": {
+            "type": "boolean",
+            "default": true
           },
           "created_by": {
             "type": "string"

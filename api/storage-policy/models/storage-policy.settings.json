@@ -35,6 +35,11 @@
     },
     "remark": {
       "type": "text"
+    },
+    "online": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

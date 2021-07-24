@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/22/2021 8:10:54 PM"
+    "x-generation-date": "07/24/2021 5:17:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4463,7 +4463,7 @@
                 "remark": {
                   "type": "string"
                 },
-                "cover": {
+                "thumbnail": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -4725,6 +4725,9 @@
                         },
                         "nickname": {
                           "type": "string"
+                        },
+                        "room_id": {
+                          "type": "integer"
                         },
                         "created_by": {
                           "type": "string"
@@ -4867,7 +4870,7 @@
                 "remark": {
                   "type": "string"
                 },
-                "cover": {
+                "thumbnail": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -5130,6 +5133,9 @@
                         "nickname": {
                           "type": "string"
                         },
+                        "room_id": {
+                          "type": "integer"
+                        },
                         "created_by": {
                           "type": "string"
                         },
@@ -5203,6 +5209,9 @@
           },
           "nickname": {
             "type": "string"
+          },
+          "room_id": {
+            "type": "integer"
           }
         }
       },
@@ -5217,6 +5226,9 @@
           },
           "nickname": {
             "type": "string"
+          },
+          "room_id": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -5295,7 +5307,8 @@
           "id",
           "friendly_name",
           "type",
-          "config"
+          "config",
+          "online"
         ],
         "properties": {
           "id": {
@@ -5320,6 +5333,10 @@
           },
           "remark": {
             "type": "string"
+          },
+          "online": {
+            "type": "boolean",
+            "default": true
           }
         }
       },
@@ -5327,7 +5344,8 @@
         "required": [
           "friendly_name",
           "type",
-          "config"
+          "config",
+          "online"
         ],
         "properties": {
           "friendly_name": {
@@ -5349,6 +5367,10 @@
           },
           "remark": {
             "type": "string"
+          },
+          "online": {
+            "type": "boolean",
+            "default": true
           },
           "created_by": {
             "type": "string"
