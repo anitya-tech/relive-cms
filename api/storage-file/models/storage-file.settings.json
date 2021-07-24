@@ -24,7 +24,8 @@
       "type": "string"
     },
     "state": {
-      "type": "integer"
+      "type": "integer",
+      "index": true
     },
     "storage_policy": {
       "type": "string",

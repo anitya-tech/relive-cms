@@ -22,7 +22,8 @@
       "required": true
     },
     "room_id": {
-      "type": "integer"
+      "type": "integer",
+      "index": true
     }
   }
 }

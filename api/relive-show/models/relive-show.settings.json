@@ -14,11 +14,13 @@
   "attributes": {
     "room_id": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "index": true
     },
     "start_time": {
       "type": "datetime",
-      "required": true
+      "required": true,
+      "index": true
     },
     "duration": {
       "type": "integer",
